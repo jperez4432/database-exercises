@@ -1,6 +1,6 @@
 USE employees;
 
-SELECT first_name
+SELECT *
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya');
 -- SELECT first_name FROM employees WHERE first_name = 'Irena' OR 'Vidya' OR 'Maya';
@@ -39,4 +39,6 @@ SELECT *
 FROM employees
 WHERE last_name LIKE 'e%e';
 
-SELECT * FROM employees WHERE last_name LIKE '%q%' AND NOT last_name LIKE '%qu%';
+SELECT * FROM employees
+WHERE last_name LIKE '%q%'
+  AND NOT last_name LIKE '%qu%';
