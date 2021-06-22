@@ -37,3 +37,7 @@ GROUP BY last_name
 ORDER BY last_name;
 
 SELECT gender, COUNT(*) FROM employees;
+
+SELECT CONCAT(first_name, ' ', last_name) AS Name, DATEDIFF(hire_date, birth_date)/365 AS 'Age when hired'FROM employees
+ORDER BY DATEDIFF(hire_date, birth_date)/365 DESC
+LIMIT 50;
