@@ -32,3 +32,5 @@ VALUES ('Olivia', 29),
 SELECT p.first_name, a.name
 FROM persons p
          JOIN albums a ON p.album_id = a.id;
+
+SELECT p.first_name, a.name FROM albums a LEFT JOIN persons p on a.id = p.album_id
